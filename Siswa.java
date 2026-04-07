@@ -71,7 +71,7 @@ public class Siswa {
 
             else if (perintah.equals("RETURN")) {
                 String kode = bagian[1];
-                Vehicle v = cariVehicle(list, kode);
+                Vehicle kendaraan = cariVehicle(list, kode);
 
                 if (kendaraan == null) {
                     System.out.println("Kendaraan tidak ditemukan");
