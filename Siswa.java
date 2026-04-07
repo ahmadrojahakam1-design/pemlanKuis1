@@ -73,12 +73,12 @@ public class Siswa {
                 String kode = bagian[1];
                 Vehicle v = cariVehicle(list, kode);
 
-                if (v == null) {
+                if (kendaraan == null) {
                     System.out.println("Kendaraan tidak ditemukan");
-                } else if (v.isTersedia()) {
+                } else if (kendaraan.isTersedia()) {
                     System.out.println("Kendaraan belum disewa");
                 } else {
-                    v.setTersedia(true);
+                    kendaraan.setTersedia(true);
                     System.out.println(kode + " berhasil dikembalikan");
                 }
             }
